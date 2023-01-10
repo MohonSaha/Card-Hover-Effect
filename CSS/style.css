@@ -1,0 +1,91 @@
+/* Css Resets  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-card{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px gray, -5px -5px 20px gray;
+}
+
+.card{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.under-card{
+    text-align: center;
+    padding: 20px;
+    color: #063668;
+}
+
+.under-card h2 {
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.under-card p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.under-card a{
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #063668;
+    border: 2px solid #063668;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.upper-card{
+    /* background-color: #063668; */
+    background-image: url('../images/mLogo-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.parent-card:hover .upper-card{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 30px;
+    left: 35%;
+    background-color: #fff;
+    border: 2px solid #063668; 
+    transition: 0.9s;
+}
+
+a:hover{
+    background-color: #073668;
+    color: white;
+}
